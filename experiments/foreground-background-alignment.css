@@ -1,0 +1,38 @@
+.background {
+  background: lightsalmon url("images/3x3-grid.svg");
+  background-size: 100% 100%;
+  font-size: 5em;
+  height: 3em;
+  position: relative;
+  width: 3em;
+}
+
+.white-square {
+  background: white;
+  height: 1em;
+  width: 1em;
+}
+
+.white-square-1 {
+  left: 1em;
+  position: absolute;
+  top: 0;
+}
+
+.white-square-2 {
+  left: 0;
+  position: absolute;
+  top: 1em;
+}
+
+.white-square-3 {
+  left: 2em;
+  position: absolute;
+  top: 1em;
+}
+
+.white-square-4 {
+  left: 1em;
+  position: absolute;
+  top: 2em;
+}
