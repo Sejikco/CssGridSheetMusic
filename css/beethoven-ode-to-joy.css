@@ -8,24 +8,25 @@ h1 {
 }
 
 .sheet-music {
-  display: grid;
   font-size: 0.4em;
   margin: auto;
   padding-left: 16em;
 }
 
 .bar {
-  background: #ffffff url("../images/stave.svg");
+  background-color: #ffffff;
+  background-image: url("../images/stave.svg");
   background-size: auto 100%;
   background-repeat: repeat-x;
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  float: left;
   height: 16em;
   position: relative;
+  width: 32em;
 }
 
 .bar .stave-header {
-  background: #ffffff url("../images/stave-header.svg");
+  background-color: #ffffff;
+  background-image: url("../images/stave-header.svg");
   background-size: auto 100%;
   height: 16em;
   left: -16em;
@@ -35,89 +36,123 @@ h1 {
 }
 
 .bar:first-child .stave-header {
-  background: #ffffff url("../images/stave-header-key-signature.svg");
+  background-color: #ffffff;
+  background-image: url("../images/stave-header-key-signature.svg");
 }
 
 .bar-line {
-  content: url("../images/bar-line.svg");
+  background-color: transparent;
+  background-image: url("../images/bar-line.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   height: 16em;
   position: absolute;
   right: 0;
+  width: 1em;
 }
 
 .bold-double-bar-line {
-  content: url("../images/bold-double-bar-line.svg");
+  background-color: transparent;
+  background-image: url("../images/bold-double-bar-line.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   height: 16em;
   position: absolute;
   right: 0;
+  width: 1.17em;
 }
 
 .half-note {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  float: left;
   grid-column: span 4;
   height: 16em;
   justify-self: center;
+  margin: 0 2.58em;
+  width: 2.83em;
 }
 
 .half-note.b6, .half-note.a6, .half-note.g5, .half-note.f5, .half-note.e5, .half-note.d5, .half-note.c5, .half-note.b5 {
-  content: url("../images/half-note-down.svg");
+  background-image: url("../images/half-note-down.svg");
 }
 
 .half-note.a5, .half-note.g4, .half-note.f4, .half-note.e4, .half-note.d4, .half-note.c4, .half-note.b4 {
-  content: url("../images/half-note-up.svg");
+  background-image: url("../images/half-note-up.svg");
 }
 
 .half-note-spacer {
-  grid-column: span 4;
+  width: 4em;
 }
 
 .quarter-note {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  float: left;
   grid-column: span 4;
   height: 16em;
   justify-self: center;
+  margin: 0 2.58em;
+  width: 2.83em;
 }
 
 .quarter-note.b6, .quarter-note.a6, .quarter-note.g5, .quarter-note.f5, .quarter-note.e5, .quarter-note.d5, .quarter-note.c5, .quarter-note.b5 {
-  content: url("../images/quarter-note-down.svg");
+  background-image: url("../images/quarter-note-down.svg");
 }
 
 .quarter-note.a5, .quarter-note.g4, .quarter-note.f4, .quarter-note.e4, .quarter-note.d4, .quarter-note.c4, .quarter-note.b4 {
-  content: url("../images/quarter-note-up.svg");
+  background-image: url("../images/quarter-note-up.svg");
 }
 
 .eighth-note {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  float: left;
   grid-column: span 2;
   height: 16em;
   justify-self: center;
+  margin: 0 0.58em;
 }
 
 .eighth-note.b6, .eighth-note.a6, .eighth-note.g5, .eighth-note.f5, .eighth-note.e5, .eighth-note.d5, .eighth-note.c5, .eighth-note.b5 {
-  content: url("../images/eighth-note-down.svg");
+  background-image: url("../images/eighth-note-down.svg");
+  width: 2.83em;
 }
 
 .eighth-note.a5, .eighth-note.g4, .eighth-note.f4, .eighth-note.e4, .eighth-note.d4, .eighth-note.c4, .eighth-note.b4 {
-  content: url("../images/eighth-note-up.svg");
+  background-image: url("../images/eighth-note-up.svg");
+  width: 6.83em;
 }
 
 .three-eighth-note {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  float: left;
   grid-column: span 4;
   height: 16em;
   justify-self: center;
+  margin: 0 1.58em;
+  width: 4.83em;
 }
 
 .three-eighth-note.b6, .three-eighth-note.g5, .three-eighth-note.e5, .three-eighth-note.c5 {
-  content: url("../images/three-eighth-note-down.svg");
+  background-image: url("../images/three-eighth-note-down.svg");
 }
 
 .three-eighth-note.a6, .three-eighth-note.f5, .three-eighth-note.d5, .three-eighth-note.b5 {
-  content: url("../images/three-eighth-note-offset-down.svg");
+  background-image: url("../images/three-eighth-note-offset-down.svg");
 }
 
 .three-eighth-note.a5, .three-eighth-note.f4, .three-eighth-note.d4, .three-eighth-note.b4 {
-  content: url("../images/three-eighth-note-up.svg");
+  background-image: url("../images/three-eighth-note-up.svg");
 }
 
 .three-eighth-note.g4, .three-eighth-note.e4, .three-eighth-note.c4 {
-  content: url("../images/three-eighth-note-offset-up.svg");
+  background-image: url("../images/three-eighth-note-offset-up.svg");
 }
 
 .three-eighth-note-spacer {
@@ -182,6 +217,39 @@ h1 {
 
 .b4 {
   transform: translate(0, 7em);
+}
+
+@supports (display: grid) {
+  .sheet-music {
+    display: grid;
+  }
+
+  .bar {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: auto;
+  }
+
+  .half-note {
+    margin: 0;
+  }
+
+  .half-note-spacer {
+    grid-column: span 4;
+    width: auto;
+  }
+
+  .quarter-note {
+    margin: 0;
+  }
+
+  .eighth-note {
+    margin: 0;
+  }
+
+  .three-eighth-note {
+    margin: 0;
+  }
 }
 
 @media (min-width: 0px) {
