@@ -10,6 +10,7 @@ h1 {
 .sheet-music {
   font-size: 0.4em;
   margin: auto;
+  max-width: 144em;
   padding-left: 16em;
 }
 
@@ -258,12 +259,14 @@ h1 {
     margin: 0.2em 0;
   }
 
-  .sheet-music {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .bar {
     margin: 1em 0;
+  }
+
+  @supports (display: grid) {
+    .sheet-music {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -272,12 +275,14 @@ h1 {
     margin: 0.3em 0;
   }
 
-  .sheet-music {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .bar {
     margin: 2em 0;
+  }
+
+  @supports (display: grid) {
+    .sheet-music {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
@@ -287,23 +292,30 @@ h1 {
     margin: 0.6em 0;
   }
 
-  .sheet-music {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .bar {
     margin: 3em 0;
+  }
+
+  @supports (display: grid) {
+    .sheet-music {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
 @media (min-width: 992px) {
-  .sheet-music {
-    grid-template-columns: repeat(4, 1fr);
+  @supports (display: grid) {
+    .sheet-music {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 1200px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
-  .sheet-music {
-    max-width: 1200px;
+  @supports (display: grid) {
+    .sheet-music {
+      max-width: 1200px;
+    }
   }
 }
