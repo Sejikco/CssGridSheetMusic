@@ -38,7 +38,7 @@ h1 {
 
 .bar:first-child .stave-header {
   background-color: #ffffff;
-  background-image: url("../images/stave-header-key-signature.svg");
+  background-image: url("../images/stave-header-time-signature.svg");
 }
 
 .bar-line {
