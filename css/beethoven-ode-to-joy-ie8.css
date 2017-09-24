@@ -1,0 +1,65 @@
+.sheet-music {
+  font-size: 0.375em;
+}
+
+.bar {
+  background-image: url("../images/stave.png");
+}
+
+.bar .stave-header {
+  background-image: url("../images/stave-header.png");
+}
+
+.bar:first-child .stave-header {
+  background-image: url("../images/stave-header-time-signature.png");
+}
+
+.bar-line {
+  background-image: url("../images/bar-line.png");
+}
+
+.bold-double-bar-line {
+  background-image: url("../images/bold-double-bar-line.png");
+}
+
+.half-note.b6, .half-note.a6, .half-note.g5, .half-note.f5, .half-note.e5, .half-note.d5, .half-note.c5, .half-note.b5 {
+  background-image: url("../images/half-note-down.png");
+}
+
+.half-note.a5, .half-note.g4, .half-note.f4, .half-note.e4, .half-note.d4, .half-note.c4, .half-note.b4 {
+  background-image: url("../images/half-note-up.png");
+}
+
+.quarter-note.b6, .quarter-note.a6, .quarter-note.g5, .quarter-note.f5, .quarter-note.e5, .quarter-note.d5, .quarter-note.c5, .quarter-note.b5 {
+  background-image: url("../images/quarter-note-down.png");
+}
+
+.quarter-note.a5, .quarter-note.g4, .quarter-note.f4, .quarter-note.e4, .quarter-note.d4, .quarter-note.c4, .quarter-note.b4 {
+  background-image: url("../images/quarter-note-up.png");
+}
+
+.eighth-note.b6, .eighth-note.a6, .eighth-note.g5, .eighth-note.f5, .eighth-note.e5, .eighth-note.d5, .eighth-note.c5, .eighth-note.b5 {
+  background-image: url("../images/eighth-note-down.png");
+  width: 2.83em;
+}
+
+.eighth-note.a5, .eighth-note.g4, .eighth-note.f4, .eighth-note.e4, .eighth-note.d4, .eighth-note.c4, .eighth-note.b4 {
+  background-image: url("../images/eighth-note-up.png");
+  width: 6.83em;
+}
+
+.three-eighth-note.b6, .three-eighth-note.g5, .three-eighth-note.e5, .three-eighth-note.c5 {
+  background-image: url("../images/three-eighth-note-down.png");
+}
+
+.three-eighth-note.a6, .three-eighth-note.f5, .three-eighth-note.d5, .three-eighth-note.b5 {
+  background-image: url("../images/three-eighth-note-offset-down.png");
+}
+
+.three-eighth-note.a5, .three-eighth-note.f4, .three-eighth-note.d4, .three-eighth-note.b4 {
+  background-image: url("../images/three-eighth-note-up.png");
+}
+
+.three-eighth-note.g4, .three-eighth-note.e4, .three-eighth-note.c4 {
+  background-image: url("../images/three-eighth-note-offset-up.png");
+}
